@@ -1,4 +1,5 @@
-import v1 from './images/cse.mp4'
+import v1 from './images/1.mp4'
+import v2 from './images/2.mp4'
 import img1 from './images/cover2.JPG'
 import img2 from './images/cover3.JPG'
 import img3 from './images/cover4.JPG'
@@ -32,7 +33,7 @@ function Main() {
                             
                             <span className="song-name">2. Tiger Video</span>
                             <video controls ref={two} width="35%" poster={img2} onPlay={playvideo(2)}>
-                                <source src="./images/cse.mp4" type="video/mp4"/>
+                                <source src={v2} type="video/mp4"/>
                                 Sorry, your browser doesn't support videos.
                             </video>
 
@@ -40,7 +41,7 @@ function Main() {
                         <div className="song-item" >
                             <span className="song-name">3. Nature Video</span>
                             <video controls ref={three} width="35%" poster={img3} onPlay={playvideo(3)}>
-                                <source src="./images/cse.mp4" type="video/mp4" />
+                                <source src={v1} type="video/mp4" />
                                 Sorry, your browser doesn't support videos.
                             </video>
                         </div>
